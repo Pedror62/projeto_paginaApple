@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:verdana;
+   
+}
+
+ul{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+nav{    
+    cursor: pointer;
+    background-color: #333;
+}
+#navBar{
+    display: flex;
+    justify-content: space-around;
+  
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    max-width: 1000px;
+    margin:0 auto;
+    color:#fff;
+}
+#navBar a {
+    transition:.4s;
+    cursor:pointer;
+}
+#nav li:houver{
+color:#ffb
+}
+
+///// heder segundario
+
+
+#bottom-header{
+   color:#333;
+
+}
+#bottom-header-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    align-items:center;
+    max-width:1000px;
+   
+}
+#bottom-header-links a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+    margin: 0 0.5rem;
+}
+#bottom-header-inner .btn,
+.btn{
+    background-color:#0071e3;
+    color:#fff;
+    border-radius:10px;
+    padding:.1rem 0.8rem;
+    align-items:center;
+    text-align:center;
+}
+.btn{
+    text-decoration:none;
+    
+}
+#bottom-header-links a.btn{
+    font-size: 1.1rem;
+    padding: .8rem 1.4rem;
+    align-self: center;
+    border-radius: 32px;
+}
+hr{
+    color:#fff;
+}
+
+#ribbon{
+    text-align:center;
+    padding: 0.50rem;
+    margin: 0 auto;
+    background-color: #f5f5f7;
+
+    color: #1d1d1d;
+    font-size: 0.9rem;
+}
+#ribbon a {
+    color:#0071e3;
+}
+#main-content{
+    text-align: center;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-content #title{
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+#main-content #subtitle{
+    margin: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#description{
+    margin: 1rem;
+    width: 719px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom:1rem;
+}
+
+#price{
+    margin: 2rem;
+    color: #86868b;
+    font-size: 1.9rem;
+}
+#main-content .btn{
+    font-size:1.1rem;
+    padding:.8rem 1.4rem;
+    align-self:center;
+    border-radius: 32px;
+}
+#main-content #producto-image{
+    max-width:1000px;
+    margin: 3rem auto;
+    opacity:1;
+    transition:.5s;
+}
+#main-content #producto-image.changing{
+    opacity:.5;
+}
+
+#imagem-picker{
+    margin-bottom:30px;
+}
+
+#imagem-picker ul{
+    display:flex;
+   justify-content: center;
+    margin: 0 5rem;
+}
+#imagem-picker li{
+    margin: 1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+}
+
+#imagem-picker li .color{
+    width:2rem;
+    height:2rem;
+    border-radius:50%;
+
+    box-shadow: 1px 1px;
+    border: 3px solid #fff;
+    margin:1rem;
+    pointer-events:none;
+}
+
+#imagem-picker li .description{
+    color:#1d1d1d;
+    font-size:0.8rem;
+}
+
+#green .color {
+    background-color:#394c38;
+}
+#silver .color {
+    background-color:#c0c0c0;
+}
+#Golden .color {
+    background-color:#daa520 ;
+}
+#grafite .color {
+    background-color:#2e2e2e;
+}
+#blue .color {
+    background-color:#0000FF;
+}
+.selected{
+    outline: 2px solid #43a1ff;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 480px){
+    #navBar  li{
+        display:none;
+    }
+    #navBar #logo{
+        display: flex;
+    }
+    #bottom-header-links a {
+        display:none;
+    }
+    #bottom-header-links .btn{
+        display:flex;
+    }
+    #subtitle{
+        font-size: 4rem;
+        flex-wrap: nowrap;
+        display: contents;
+        margin-bottom:1rem;
+    
+    }
+    #description{
+        width: 400px;
+        line-height: 1.4rem;
+    } 
+   
+    #main-content{
+        padding: 2rem;
+        overflow:hidden;
+    }
+    #imagem-picker li{
+        margin: .2rem;
+    }
+}
